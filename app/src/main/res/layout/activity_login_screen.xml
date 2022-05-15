@@ -49,6 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
+        app:layout_constraintVertical_bias="0.35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logscreen_image">
@@ -61,6 +62,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
             android:hint="vasya@mail.com" />
 
         <TextView
@@ -72,11 +74,33 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
             android:hint="********" />
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_red"
+            android:text="Forgot passcode?"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"/>
 
     </LinearLayout>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginButton"
+        android:onClick="LoginClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/orangebtn_bg"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
